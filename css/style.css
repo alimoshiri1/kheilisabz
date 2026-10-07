@@ -570,18 +570,37 @@ section.slider-section .slider-name span {
   padding-bottom: 8px;
   overflow: hidden;
   background: #fff;
-  transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out, width 0.2s ease-in;
   will-change: auto;
 }
-@media (hover: hover) {
+/* hover exactly like kheilisabz.com (desktop): card widens 190 -> 240
+   and the cover fills the whole card (prices stay underneath) */
+@media (min-width: 861px) and (hover: hover) {
   .book-slider .swiper-slide.slider-item:hover {
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+    width: 240px;
+    padding: 0;
     border-radius: 16px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
     position: relative;
     z-index: 5;
+    transition: 0.5s;
   }
-  .slider-item:hover .image_product img {
-    transform: scale(1.07);
+  .book-slider .swiper-slide.slider-item:hover .image_product {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    transition: 0.5s;
+  }
+  .book-slider .swiper-slide.slider-item:hover .image_product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
   }
   .special-tile:hover .tile-inner {
     transform: scale(1.06);
@@ -599,8 +618,7 @@ section.slider-section .slider-name span {
   display: block;
   border-radius: 8px;
   border: 1px solid #eaeaea;
-  transition: transform 0.25s ease;
-  transform-origin: center;
+  transition: all 0.2s ease-in;
 }
 .discount {
   position: absolute;
@@ -722,16 +740,13 @@ section.slider-section .slider-name span {
   width: 128.5px;
   display: block;
   text-decoration: none;
-  transition: transform 0.2s ease;
-  transform-origin: center;
-  will-change: transform;
+  transition: background-color 0.2s ease;
 }
 .series-tile img {
   width: 100%;
   height: auto;
   vertical-align: baseline;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  transform-origin: center;
+  transition: background-color 0.2s ease;
 }
 .series-tile span {
   display: flex;
@@ -749,13 +764,9 @@ section.slider-section .slider-name span {
   line-height: 1.35;
   color: #1a237e;
   padding: 4px 6px;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  transform-origin: center;
+  transition: background-color 0.2s ease;
 }
 @media (hover: hover) {
-  .series-tile:hover {
-    transform: scale(1.08);
-  }
   .series-tile:hover img,
   .series-tile:hover span {
     background-color: #f5f5f5;
@@ -802,19 +813,10 @@ section.slider-section .slider-name span {
   background: #f5f5f5;
   text-align: center;
   white-space: nowrap;
-  transition: transform 0.2s ease, background-color 0.2s ease;
-  transform-origin: center;
-  will-change: transform;
 }
 .series-slider .swiper-slide {
   width: auto;
   height: auto;
-}
-@media (hover: hover) {
-  .series-slider .chips:hover {
-    transform: scale(1.07);
-    background-color: #e8e8e8;
-  }
 }
 
 /* banners */
@@ -830,9 +832,7 @@ section.slider-section .slider-name span {
   width: 32%;
   margin-top: 14px;
   display: block;
-  transition: transform 0.2s ease-in-out;
-  transform-origin: center;
-  will-change: transform;
+  overflow: hidden;
 }
 .banner img {
   display: block;
@@ -840,15 +840,6 @@ section.slider-section .slider-name span {
   height: auto;
   border-radius: 8px;
   border: 1px solid #eaeaea;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-@media (hover: hover) {
-  .banner:hover {
-    transform: scale(1.03);
-  }
-  .banner:hover img {
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
-  }
 }
 
 /* ============ footer ============ */
