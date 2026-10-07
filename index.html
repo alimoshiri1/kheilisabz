@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>خیلی سبز | فروشگاه اینترنتی انتشارات خیلی سبز</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="stylesheet" href="vendor/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="kheilisabz">
+  <header>
+    <div class="bigheader">
+      <a class="logo" href="/"><img src="images/logo-desktop.svg" alt="لوگوی خیلی سبز"></a>
+      <div class="header-menu">
+        <ul id="nav-ul"></ul>
+      </div>
+      <div class="header-actions">
+        <a class="cart-link" href="/cart" aria-label="سبد خرید">
+          <img src="images/icon-cart.svg" width="24" height="24" alt="">
+        </a>
+        <div class="login-wrap">
+          <a class="login-button" href="/login.html"><span id="login-label">ورود یا ثبت‌نام</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="header-blur" id="header-blur"></div>
+    <div class="container menu-segment">
+      <div class="megainner" id="megainner" aria-hidden="true">
+        <div class="mega-flex">
+          <ul class="menubar level-2" id="menubar"></ul>
+          <div class="menuScroll" id="menuscroll"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-header">
+      <div class="container mobile-header-content">
+        <img class="burger" id="burger" src="images/icon-menu.svg" width="24" height="24" alt="منو">
+        <a class="mlogo" href="/"><img src="images/logo-mobile.svg" alt="لوگوی خیلی سبز"></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="search-segment">
+    <div class="container">
+      <div class="swiper-container hero-swiper" id="hero-swiper">
+        <div class="swiper-wrapper" id="hero-wrapper"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="search-box-outer">
+      <div class="search-box-mb">
+        <form class="searchinputDesktop search-glass" action="#" onsubmit="return false" dir="rtl" role="search">
+          <button class="search-btn" type="button" aria-label="جستجو">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          </button>
+          <input type="text" id="search-input" placeholder="جستجو در خیلی سبز..." autocomplete="off">
+          <span class="search-hint">↵ جستجو</span>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <main class="main-container">
+    <div class="container_slider_one">
+      <section class="slider-section">
+        <div class="container">
+          <p class="slider-name"><span id="title-1"></span></p>
+          <div class="book-slider">
+            <div class="swiper-container books-swiper" id="books-1">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <div class="tile-series" id="tile-series"></div>
+    </div>
+    <div class="series-slider mobile-only" id="series-chips">
+      <div class="swiper-container" id="series-chips-swiper">
+        <div class="swiper-wrapper"></div>
+      </div>
+    </div>
+
+    <div class="container_slider_three">
+      <section class="slider-section">
+        <div class="container">
+          <p class="slider-name"><span id="title-2"></span></p>
+          <div class="book-slider">
+            <div class="swiper-container books-swiper" id="books-2">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <div class="series-slider" id="grade-chips">
+        <div class="swiper-container" id="grade-chips-swiper">
+          <div class="swiper-wrapper"></div>
+        </div>
+      </div>
+      <div class="banners_tow" id="banners"></div>
+    </div>
+
+    <div class="container_slider_tow">
+      <section class="slider-section">
+        <div class="container">
+          <p class="slider-name"><span id="title-3"></span></p>
+          <div class="book-slider">
+            <div class="swiper-container books-swiper" id="books-3">
+              <div class="swiper-wrapper"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer" id="site-footer"></footer>
+
+  <div class="container_bottom_navigation" id="bottom-nav"></div>
+
+  <div id="popup-root"></div>
+  <div id="drawer-root"></div>
+
+  <script src="vendor/swiper.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

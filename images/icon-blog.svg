@@ -1,0 +1,13 @@
+<svg id="icon.blog" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Group_993" data-name="Group 993">
+    <path id="Path_11451" data-name="Path 11451" d="M7,13H17" fill="none" stroke="#2d2d2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+    <path id="Path_11452" data-name="Path 11452" d="M7,17H17" fill="none" stroke="#2d2d2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+    <g id="Path_11453" data-name="Path 11453" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10,3H8A1,1,0,0,0,7,4V9L9,8l2,1V4A1,1,0,0,0,10,3Z" stroke="none"/>
+      <path d="M 8 3 C 7.447999954223633 3 7 3.447999954223633 7 4 L 7 9 L 9 8 L 11 9 L 11 4 C 11 3.447999954223633 10.55200004577637 3 10 3 L 8 3 M 8 1.300000190734863 L 10 1.300000190734863 C 11.48879051208496 1.300000190734863 12.69999980926514 2.511210441589355 12.69999980926514 4 L 12.69999980926514 9 C 12.69999980926514 9.589179992675781 12.39492988586426 10.13636016845703 11.89373970031738 10.44610977172852 C 11.39254951477051 10.755859375 10.76671981811523 10.78401947021484 10.2397403717041 10.52052974700928 L 9 9.900659561157227 L 7.760259628295898 10.52052974700928 C 7.233279228210449 10.78402042388916 6.607448577880859 10.755859375 6.106260299682617 10.44610977172852 C 5.605070114135742 10.13636016845703 5.300000190734863 9.589179992675781 5.300000190734863 9 L 5.300000190734863 4 C 5.300000190734863 2.511210441589355 6.511210441589355 1.300000190734863 8 1.300000190734863 Z" stroke="none" fill="#2d2d2d"/>
+    </g>
+    <path id="Path_11454" data-name="Path 11454" d="M11.958,4H19a2,2,0,0,1,2,2V19a2,2,0,0,1-2,2H5a2,2,0,0,1-2-2V6A2,2,0,0,1,5,4h.921" fill="none" stroke="#2d2d2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+    <path id="Path_11455" data-name="Path 11455" d="M15,9h2" fill="none" stroke="#2d2d2d" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/>
+  </g>
+  <path id="Path_11456" data-name="Path 11456" d="M0,0H24V24H0Z" fill="none"/>
+</svg>

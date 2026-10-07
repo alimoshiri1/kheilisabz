@@ -1,0 +1,9 @@
+node_modules/
+*.log
+out.log
+err.log
+api.log
+api-err.log
+_ref/
+.DS_Store
+Thumbs.db

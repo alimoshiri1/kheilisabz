@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "api": "json-server --watch db.json --port 3000 --host 0.0.0.0",
+    "web": "node server.js",
+    "start": "node run.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4",
+    "puppeteer-core": "^25.12.0",
+    "swiper": "^5.4.5"
+  }
+}

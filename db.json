@@ -1,0 +1,1544 @@
+{
+  "settings": {
+    "placeholder": "جستجو در خیلی سبز",
+    "loginLabel": "ورود یا ثبت‌نام",
+    "popupImage": "images/popup.svg",
+    "popupImageMobile": "images/popup-mobile.svg",
+    "popupHref": "https://club.kheilisabz.com",
+    "popupActive": true
+  },
+  "nav": [
+    {
+      "label": "کتاب‌ها",
+      "type": "mega"
+    },
+    {
+      "label": "وبلاگ",
+      "href": "/blog"
+    },
+    {
+      "label": "آزمون",
+      "href": "https://azmoonkheilisabz.com",
+      "external": true
+    },
+    {
+      "label": "باشگاه مشتریان",
+      "href": "https://club.kheilisabz.com",
+      "external": true
+    },
+    {
+      "label": "درباره ما",
+      "href": "/page/about-us"
+    },
+    {
+      "label": "همکاری با ما",
+      "type": "dropdown",
+      "items": [
+        {
+          "label": "فرصت‌های شغلی",
+          "href": "https://jobs.kheilisabz.com/",
+          "external": true
+        },
+        {
+          "label": "واحد محتوایی خیلی‌سبز",
+          "href": "https://kheilisabz360.com/talents/landing?id=5Z2R2BXS&token=VjEuMTc0ODQzMTEzNS41WjJSMkJYUy5LaGVpbGlzYWJ6MzYwLmNvbS45NTU%3D",
+          "external": true
+        }
+      ]
+    },
+    {
+      "label": "تماس با ما",
+      "href": "/page/contact-us"
+    }
+  ],
+  "menu": [
+    {
+      "Title": "کتاب کمک آموزشی",
+      "Slug": "books",
+      "FontIcon": "",
+      "SubCategories": [
+        {
+          "Title": "کنکور",
+          "Filter": "",
+          "FontIcon": "",
+          "MenuHeaders": [
+            {
+              "Title": "جامع",
+              "Filter": "k5=جامع",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "علوم تجربی",
+                  "Filter": "k6=علوم-تجربی"
+                },
+                {
+                  "Title": "ریاضی و فیزیک",
+                  "Filter": "k6=ریاضی-و-فیزیک"
+                },
+                {
+                  "Title": "علوم انسانی",
+                  "Filter": "k6=علوم-انسانی"
+                }
+              ]
+            },
+            {
+              "Title": "پایه",
+              "Filter": "k5=پایه",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "علوم تجربی",
+                  "Filter": "k6=علوم-تجربی"
+                },
+                {
+                  "Title": "ریاضی و فیزیک",
+                  "Filter": "k6=ریاضی-و-فیزیک"
+                },
+                {
+                  "Title": "علوم انسانی",
+                  "Filter": "k6=علوم-انسانی"
+                }
+              ]
+            },
+            {
+              "Title": "پایه + دوازدهم",
+              "Filter": "k5=دوازدهم,پایه&k4=تست,جمع-بندی,جیبی,چند-کنکور,فصل-آزمون,موضوعی,نردبام,آموزش-شگفت-انگیز",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "علوم تجربی",
+                  "Filter": "k6=علوم-تجربی"
+                },
+                {
+                  "Title": "ریاضی و فیزیک",
+                  "Filter": "k6=ریاضی-و-فیزیک"
+                },
+                {
+                  "Title": "علوم انسانی",
+                  "Filter": "k6=علوم-انسانی"
+                }
+              ]
+            },
+            {
+              "Title": "سری کتاب‌های کنکور",
+              "Filter": "",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "تست",
+                  "Filter": "k4=تست"
+                },
+                {
+                  "Title": "جمع بندی",
+                  "Filter": "k4=جمع-بندی"
+                },
+                {
+                  "Title": "چند کنکور",
+                  "Filter": "k4=چند-کنکور"
+                },
+                {
+                  "Title": "فصل آزمون",
+                  "Filter": "k4=فصل-آزمون"
+                },
+                {
+                  "Title": "موضوعی",
+                  "Filter": "k4=موضوعی"
+                },
+                {
+                  "Title": "نردبام",
+                  "Filter": "k4=نردبام"
+                },
+                {
+                  "Title": "آموزش شگفت انگیز",
+                  "Filter": "k4=آموزش-شگفت-انگیز"
+                },
+                {
+                  "Title": "جیبی",
+                  "Filter": "k4=جیبی"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "دوازدهم",
+          "Filter": "k5=دوازدهم",
+          "FontIcon": "",
+          "MenuHeaders": [
+            {
+              "Title": "علوم تجربی",
+              "Filter": "k6=علوم-تجربی",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "زیست",
+                  "Filter": "k2=زیست"
+                },
+                {
+                  "Title": "فیزیک",
+                  "Filter": "k2=فیزیک"
+                },
+                {
+                  "Title": "ریاضی",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "شیمی",
+                  "Filter": "k2=شیمی"
+                },
+                {
+                  "Title": "عربی، زبان قرآن",
+                  "Filter": "k2=عربی"
+                },
+                {
+                  "Title": "دین و زندگی",
+                  "Filter": "k2=دین-و-زندگی"
+                },
+                {
+                  "Title": "هویت اجتماعی",
+                  "Filter": "k2=هویت-اجتماعی"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "سلامت و بهداشت",
+                  "Filter": "k2=سلامت-و-بهداشت"
+                }
+              ]
+            },
+            {
+              "Title": "ریاضی و فیزیک",
+              "Filter": "k6=ریاضی-و-فیزیک",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "حسابان، هندسه، گسسته",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "فیزیک",
+                  "Filter": "k2=فیزیک"
+                },
+                {
+                  "Title": "شیمی",
+                  "Filter": "k2=شیمی"
+                },
+                {
+                  "Title": "دین و زندگی",
+                  "Filter": "k2=دین-و-زندگی"
+                },
+                {
+                  "Title": "هویت اجتماعی",
+                  "Filter": "k2=هویت-اجتماعی"
+                },
+                {
+                  "Title": "عربی، زبان قرآن",
+                  "Filter": "k2=عربی"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "سلامت و بهداشت",
+                  "Filter": "k2=سلامت-و-بهداشت"
+                }
+              ]
+            },
+            {
+              "Title": "علوم انسانی",
+              "Filter": "k6=علوم-انسانی",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "ریاضی و آمار",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "جامعه شناسی",
+                  "Filter": "k2=جامعه-شناسی"
+                },
+                {
+                  "Title": "دین و زندگی",
+                  "Filter": "k2=دین-و-زندگی"
+                },
+                {
+                  "Title": "تاریخ ایران و جهان معاصر",
+                  "Filter": "k2=تاریخ"
+                },
+                {
+                  "Title": "عربی، زبان قرآن",
+                  "Filter": "k2=عربی"
+                },
+                {
+                  "Title": "علوم و فنون ادبی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "فلسفه",
+                  "Filter": "k2=فلسفه-و-منطق"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "سلامت و بهداشت",
+                  "Filter": "k2=سلامت-و-بهداشت"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "یازدهم",
+          "Filter": "k5=یازدهم",
+          "FontIcon": "",
+          "MenuHeaders": [
+            {
+              "Title": "علوم تجربی",
+              "Filter": "k6=علوم-تجربی",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "زیست",
+                  "Filter": "k2=زیست"
+                },
+                {
+                  "Title": "فیزیک",
+                  "Filter": "k2=فیزیک"
+                },
+                {
+                  "Title": "ریاضی",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "شیمی",
+                  "Filter": "k2=شیمی"
+                },
+                {
+                  "Title": "عربی، زبان قرآن",
+                  "Filter": "k2=عربی"
+                },
+                {
+                  "Title": "دین و زندگی",
+                  "Filter": "k2=دین-و-زندگی"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "انسان و محیط زیست",
+                  "Filter": "k2=انسان-و-محیط-زیست"
+                },
+                {
+                  "Title": "تاریخ",
+                  "Filter": "k2=تاریخ"
+                },
+                {
+                  "Title": "زمین شناسی",
+                  "Filter": "k2=زمین-شناسی"
+                }
+              ]
+            },
+            {
+              "Title": "ریاضی و فیزیک",
+              "Filter": "k6=ریاضی-و-فیزیک",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "حسابان، هندسه، گسسته",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "فیزیک",
+                  "Filter": "k2=فیزیک"
+                },
+                {
+                  "Title": "شیمی",
+                  "Filter": "k2=شیمی"
+                },
+                {
+                  "Title": "دین و زندگی",
+                  "Filter": "k2=دین-و-زندگی"
+                },
+                {
+                  "Title": "عربی، زبان قرآن",
+                  "Filter": "k2=عربی"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "تاریخ",
+                  "Filter": "k2=تاریخ"
+                },
+                {
+                  "Title": "انسان و محیط زیست",
+                  "Filter": "k2=انسان-و-محیط-زیست"
+                },
+                {
+                  "Title": "زمین شناسی",
+                  "Filter": "k2=زمین-شناسی"
+                }
+              ]
+            },
+            {
+              "Title": "علوم انسانی",
+              "Filter": "k6=علوم-انسانی",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "ریاضی و آمار",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "جامعه شناسی",
+                  "Filter": "k2=جامعه-شناسی"
+                },
+                {
+                  "Title": "جغرافیا",
+                  "Filter": "k2=جغرافیا"
+                },
+                {
+                  "Title": "دین و زندگی",
+                  "Filter": "k2=دین-و-زندگی"
+                },
+                {
+                  "Title": "تاریخ ایران و جهان معاصر",
+                  "Filter": "k2=تاریخ"
+                },
+                {
+                  "Title": "عربی، زبان قرآن",
+                  "Filter": "k2=عربی"
+                },
+                {
+                  "Title": "علوم و فنون ادبی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "فلسفه",
+                  "Filter": "k2=فلسفه-و-منطق"
+                },
+                {
+                  "Title": "روانشناسی",
+                  "Filter": "k2=روانشناسی"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "انسان و محیط زیست",
+                  "Filter": "k2=انسان-و-محیط-زیست"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "دهم",
+          "Filter": "k5=دهم",
+          "FontIcon": "",
+          "MenuHeaders": [
+            {
+              "Title": "علوم تجربی",
+              "Filter": "k6=علوم-تجربی",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "زیست",
+                  "Filter": "k2=زیست"
+                },
+                {
+                  "Title": "فیزیک",
+                  "Filter": "k2=فیزیک"
+                },
+                {
+                  "Title": "ریاضی",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "شیمی",
+                  "Filter": "k2=شیمی"
+                },
+                {
+                  "Title": "عربی، زبان قرآن",
+                  "Filter": "k2=عربی"
+                },
+                {
+                  "Title": "دین و زندگی",
+                  "Filter": "k2=دین-و-زندگی"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "جغرافیا",
+                  "Filter": "k2=جغرافیا"
+                },
+                {
+                  "Title": "",
+                  "Filter": ""
+                }
+              ]
+            },
+            {
+              "Title": "ریاضی و فیزیک",
+              "Filter": "k6=ریاضی-و-فیزیک",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "حسابان، هندسه، گسسته",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "فیزیک",
+                  "Filter": "k2=فیزیک"
+                },
+                {
+                  "Title": "شیمی",
+                  "Filter": "k2=شیمی"
+                },
+                {
+                  "Title": "دین و زندگی",
+                  "Filter": "k2=دین-و-زندگی"
+                },
+                {
+                  "Title": "عربی، زبان قرآن",
+                  "Filter": "k2=عربی"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "جغرافیا",
+                  "Filter": "k2=جغرافیا"
+                }
+              ]
+            },
+            {
+              "Title": "علوم انسانی",
+              "Filter": "k6=علوم-انسانی",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "ریاضی و آمار",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "جامعه شناسی",
+                  "Filter": "k2=جامعه-شناسی"
+                },
+                {
+                  "Title": "دین و زندگی",
+                  "Filter": "k2=دین-و-زندگی"
+                },
+                {
+                  "Title": "تاریخ ایران و جهان معاصر",
+                  "Filter": "k2=تاریخ"
+                },
+                {
+                  "Title": "عربی، زبان قرآن",
+                  "Filter": "k2=عربی"
+                },
+                {
+                  "Title": "علوم و فنون ادبی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "فلسفه",
+                  "Filter": "k2=فلسفه-و-منطق"
+                },
+                {
+                  "Title": "اقتصاد",
+                  "Filter": "k2=اقتصاد"
+                },
+                {
+                  "Title": "دین و زندگی",
+                  "Filter": "k2=دین-و-زندگی"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "جغرافیا",
+                  "Filter": "k2=جغرافیا"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "متوسطه اول",
+          "Filter": "",
+          "FontIcon": "",
+          "MenuHeaders": [
+            {
+              "Title": "نهم",
+              "Filter": "k5=نهم",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "ریاضی",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "علوم",
+                  "Filter": "k2=علوم"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "عربی",
+                  "Filter": "k2=عربی"
+                },
+                {
+                  "Title": "اجتماعی",
+                  "Filter": "k2=اجتماعی"
+                },
+                {
+                  "Title": "پیام آسمانی",
+                  "Filter": "k2=پیام-آسمانی"
+                },
+                {
+                  "Title": "قرآن",
+                  "Filter": "k2=فرآن"
+                },
+                {
+                  "Title": "هوش و استعداد تحلیلی",
+                  "Filter": "k2=هوش و استعداد تحلیلی"
+                }
+              ]
+            },
+            {
+              "Title": "هشتم",
+              "Filter": "k5=هشتم",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "ریاضی",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "علوم",
+                  "Filter": "k2=علوم"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "عربی",
+                  "Filter": "k2=عربی"
+                },
+                {
+                  "Title": "اجتماعی",
+                  "Filter": "k2=اجتماعی"
+                },
+                {
+                  "Title": "پیام آسمانی",
+                  "Filter": "k2=پیام-آسمانی"
+                },
+                {
+                  "Title": "قرآن",
+                  "Filter": "k2=فرآن"
+                }
+              ]
+            },
+            {
+              "Title": "هفتم",
+              "Filter": "k5=هفتم",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "ریاضی",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "علوم",
+                  "Filter": "k2=علوم"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "عربی",
+                  "Filter": "k2=عربی"
+                },
+                {
+                  "Title": "اجتماعی",
+                  "Filter": "k2=اجتماعی"
+                },
+                {
+                  "Title": "پیام آسمانی",
+                  "Filter": "k2=پیام-آسمانی"
+                },
+                {
+                  "Title": "قرآن",
+                  "Filter": "k2=فرآن"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "Title": "دبستان",
+          "Filter": "",
+          "FontIcon": "",
+          "MenuHeaders": [
+            {
+              "Title": "ششم",
+              "Filter": "k5=ششم",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "ریاضی",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "علوم",
+                  "Filter": "k2=علوم"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "اجتماعی",
+                  "Filter": "k2=اجتماعی"
+                },
+                {
+                  "Title": "تفکر و پژوهش",
+                  "Filter": "k2=تفکر-و-پژوهش"
+                },
+                {
+                  "Title": "هدیه‌های آسمانی",
+                  "Filter": "k2=هدیه-های-آسمانی"
+                },
+                {
+                  "Title": "هوش و استعداد تحلیلی",
+                  "Filter": "k2=هوش و استعداد تحلیلی"
+                }
+              ]
+            },
+            {
+              "Title": "پنجم",
+              "Filter": "k5=پنجم",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "ریاضی",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "علوم",
+                  "Filter": "k2=علوم"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "هدیه‌های آسمانی",
+                  "Filter": "k2=هدیه-های-آسمانی"
+                },
+                {
+                  "Title": "هوش و استعداد تحلیلی",
+                  "Filter": "k2=هوش و استعداد تحلیلی"
+                }
+              ]
+            },
+            {
+              "Title": "چهارم",
+              "Filter": "k5=چهارم",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "ریاضی",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "علوم",
+                  "Filter": "k2=علوم"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "اجتماعی",
+                  "Filter": "k2=اجتماعی"
+                },
+                {
+                  "Title": "هدیه‌های آسمانی",
+                  "Filter": "k2=هدیه-های-آسمانی"
+                },
+                {
+                  "Title": "هوش و استعداد تحلیلی",
+                  "Filter": "k2=هوش و استعداد تحلیلی"
+                }
+              ]
+            },
+            {
+              "Title": "سوم",
+              "Filter": "k5=سوم",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "ریاضی",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "علوم",
+                  "Filter": "k2=علوم"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "هوش و استعداد تحلیلی",
+                  "Filter": "k2=هوش و استعداد تحلیلی"
+                }
+              ]
+            },
+            {
+              "Title": "دوم",
+              "Filter": "k5=دوم",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "ریاضی",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "علوم",
+                  "Filter": "k2=علوم"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                },
+                {
+                  "Title": "املا",
+                  "Filter": "k2=املا"
+                },
+                {
+                  "Title": "زبان انگلیسی",
+                  "Filter": "k2=زبان-انگلیسی"
+                },
+                {
+                  "Title": "هوش و استعداد تحلیلی",
+                  "Filter": "k2=هوش و استعداد تحلیلی"
+                }
+              ]
+            },
+            {
+              "Title": "اول",
+              "Filter": "k5=اول",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "ریاضی",
+                  "Filter": "k2=ریاضی"
+                },
+                {
+                  "Title": "علوم",
+                  "Filter": "k2=علوم"
+                },
+                {
+                  "Title": "فارسی",
+                  "Filter": "k2=فارسی"
+                }
+              ]
+            },
+            {
+              "Title": "پیش دبستانی",
+              "Filter": "k5=پیش-دبستانی",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "",
+                  "Filter": ""
+                }
+              ]
+            },
+            {
+              "Title": "مهدکودک",
+              "Filter": "k5=مهدکودک",
+              "FontIcon": "",
+              "Items": [
+                {
+                  "Title": "",
+                  "Filter": ""
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "sliders": [
+    {
+      "href": "",
+      "image": "images/slider/slide-1.png",
+      "target": "_self"
+    },
+    {
+      "href": "https://kheilisabz.com/books?k4=360",
+      "image": "images/slider/slide-2.png",
+      "target": "_blank"
+    },
+    {
+      "href": "https://kheilisabz.com/books?k4=BEAST-MODE-ON",
+      "image": "images/slider/slide-3.png",
+      "target": "_blank"
+    },
+    {
+      "href": "https://kheilisabz.com/books?k4=تست&k5=جامع",
+      "image": "images/slider/slide-4.png",
+      "target": "_blank"
+    },
+    {
+      "href": "https://kheilisabz.com/books?k4=تست&k2=زیستستان",
+      "image": "images/slider/slide-5.png",
+      "target": "_blank"
+    }
+  ],
+  "sections": [
+    {
+      "id": 1,
+      "title": "ویژه‌ها",
+      "products": [
+        {
+          "id": 4157,
+          "title": "بیست مُد انگلیسی دوازدهم+دو ضمیمه رایگان-BEAST MODE ON",
+          "price": 9900000,
+          "salePrice": 9900000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/30b11af7af8c4438839db35b4d3b4183-240x320.png",
+          "imgMobile": "images/products/30b11af7af8c4438839db35b4d3b4183-144x192.png",
+          "href": "/books/بیست-مُد-انگلیسی-دوازدهم-beast-mode-on-5029901",
+          "inStock": true
+        },
+        {
+          "id": 3975,
+          "title": "بتمن تست زیست جامع جلد سوال",
+          "price": 22700000,
+          "salePrice": 22700000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/fb7bd9d8dbdc419db558cefbef1b9697-240x320.png",
+          "imgMobile": "images/products/fb7bd9d8dbdc419db558cefbef1b9697-144x192.png",
+          "href": "/books/بتمن -تست- زیست- جامع-جلد -سوال",
+          "inStock": true
+        },
+        {
+          "id": 3973,
+          "title": "بتمن تست فیزیک جامع تجربی جلد اول: دوازدهم",
+          "price": 23900000,
+          "salePrice": 23900000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/73792bf7f9aa4b22b4a1da06190232a4-240x320.png",
+          "imgMobile": "images/products/73792bf7f9aa4b22b4a1da06190232a4-144x192.png",
+          "href": "/books/بتمن-تست-فیزیک-جامع-تجربی-جلد-اول-دوازدهم ",
+          "inStock": true
+        },
+        {
+          "id": 3972,
+          "title": "ماجرا انگلیسی دوازدهم + ضمیمه رایگان",
+          "price": 9900000,
+          "salePrice": 8910000,
+          "discountPresent": 10,
+          "imgDesktop": "images/products/ed774964835745eeac294545ffde055f-240x320.png",
+          "imgMobile": "images/products/ed774964835745eeac294545ffde055f-144x192.png",
+          "href": "/books/ماجرا-انگلیسی-دوازدهم-5012520",
+          "inStock": true
+        },
+        {
+          "id": 3935,
+          "title": "ماجرا دین و زندگی دوازدهم",
+          "price": 8900000,
+          "salePrice": 8010000,
+          "discountPresent": 10,
+          "imgDesktop": "images/products/2310adb493224ee09691dc5278b14829-240x320.png",
+          "imgMobile": "images/products/2310adb493224ee09691dc5278b14829-144x192.png",
+          "href": "/books/ماجرا-دین-و-زندگی-دوازدهم-5012613",
+          "inStock": true
+        },
+        {
+          "id": 3890,
+          "title": "کتاب بتمن تست زمین شناسی یازدهم  11",
+          "price": 9800000,
+          "salePrice": 9800000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/027326bb9acf4d7eb72e80f3bc018e1e-240x320.png",
+          "imgMobile": "images/products/027326bb9acf4d7eb72e80f3bc018e1e-144x192.png",
+          "href": "/books/بتمن-تست-زمین-شناسی-یازدهم-3021807",
+          "inStock": true
+        },
+        {
+          "id": 3771,
+          "title": "بتمن تست شیمی جامع جلد پاسخ + درسنامه",
+          "price": 24000000,
+          "salePrice": 24000000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/69501d42921547b0946e3f620acbc9a4-240x320.png",
+          "imgMobile": "images/products/69501d42921547b0946e3f620acbc9a4-144x192.png",
+          "href": "/books/بتمن-تست-شیمی-جامع-جلد پاسخ-و-درسنامه",
+          "inStock": true
+        },
+        {
+          "id": 3769,
+          "title": "بتمن تست شیمی جامع جلد سوال",
+          "price": 24000000,
+          "salePrice": 24000000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/4e765a47ea5048099e90dd4c7d8d1519-240x320.png",
+          "imgMobile": "images/products/4e765a47ea5048099e90dd4c7d8d1519-144x192.png",
+          "href": "/books/بتمن-تست-شیمی-جامع-جلد-سوال",
+          "inStock": true
+        },
+        {
+          "id": 2319,
+          "title": "بتمن تست ریاضی تجربی جامع جلد سوال",
+          "price": 21000000,
+          "salePrice": 21000000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/fe5f3b7ef8014f8baa11aa6e72871e82-240x320.png",
+          "imgMobile": "images/products/fe5f3b7ef8014f8baa11aa6e72871e82-144x192.png",
+          "href": "/books/کتاب-تست-ریاضی-تجربی-جامع-جلد-سوال",
+          "inStock": true
+        },
+        {
+          "id": 2318,
+          "title": "بتمن تست ریاضی تجربی جامع جلد پاسخ",
+          "price": 14000000,
+          "salePrice": 14000000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/9c10bf0c15bd4454a192442d3107af6a-240x320.png",
+          "imgMobile": "images/products/9c10bf0c15bd4454a192442d3107af6a-144x192.png",
+          "href": "/books/تست-ریاضی-تجربی-جامع-جلد-پاسخ",
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "پیشنهادات",
+      "products": [
+        {
+          "id": 1664,
+          "title": "سررسید 1405 خیلی سبز طرح To Do رنگ صورتی",
+          "price": 4500000,
+          "salePrice": 2250000,
+          "discountPresent": 50,
+          "imgDesktop": "images/products/324192a1163443cbbf1a0d90e4af9893-240x320.png",
+          "imgMobile": "images/products/324192a1163443cbbf1a0d90e4af9893-144x192.png",
+          "href": "/books/سررسید-1405-خیلی-سبز-طرح-to-do-رنگ-صورتی",
+          "inStock": true
+        },
+        {
+          "id": 1663,
+          "title": "سررسید 1405 خیلی سبز طرح To Do رنگ آبی",
+          "price": 4500000,
+          "salePrice": 2250000,
+          "discountPresent": 50,
+          "imgDesktop": "images/products/87fedd7855964baabf1007d5284961d0-240x320.png",
+          "imgMobile": "images/products/87fedd7855964baabf1007d5284961d0-144x192.png",
+          "href": "/books/سررسید-1405-خیلی-سبز-طرح-to-do-رنگ-آبی",
+          "inStock": true
+        },
+        {
+          "id": 1662,
+          "title": "سررسید 1405 خیلی سبز طرح Calender رنگ سبز",
+          "price": 4500000,
+          "salePrice": 2250000,
+          "discountPresent": 50,
+          "imgDesktop": "images/products/f2bf365250534733b2016fc62ebedcda-240x320.png",
+          "imgMobile": "images/products/f2bf365250534733b2016fc62ebedcda-144x192.png",
+          "href": "/books/سررسید-1405-خیلی-سبز-طرح-calender-رنگ-سبز",
+          "inStock": true
+        },
+        {
+          "id": 1658,
+          "title": "سررسید 1405 خیلی سبز طرح نئونی رنگ سبز زرد",
+          "price": 4500000,
+          "salePrice": 2250000,
+          "discountPresent": 50,
+          "imgDesktop": "images/products/d205df05ff8143ee9992b806847046b9-240x320.png",
+          "imgMobile": "images/products/d205df05ff8143ee9992b806847046b9-144x192.png",
+          "href": "/books/سر-رسید-1405-خیلی-سبز-طرح-نیونی-رنگ-سبز-زرد",
+          "inStock": true
+        },
+        {
+          "id": 1657,
+          "title": "سررسید 1405 خیلی سبز طرح To Do رنگ زرد",
+          "price": 4500000,
+          "salePrice": 2250000,
+          "discountPresent": 50,
+          "imgDesktop": "images/products/76b8c7cc8bb54ed09228c3e3de3b2486-240x320.png",
+          "imgMobile": "images/products/76b8c7cc8bb54ed09228c3e3de3b2486-144x192.png",
+          "href": "/books/سر-رسید-1405-خیلی-سبز-طرح-to-do-رنگ-زرد",
+          "inStock": true
+        },
+        {
+          "id": 1656,
+          "title": "سررسید 1405 خیلی سبز طرح 365 رنگ گلبهی",
+          "price": 4500000,
+          "salePrice": 2250000,
+          "discountPresent": 50,
+          "imgDesktop": "images/products/559cd62cf277472c94edd530b565d432-240x320.png",
+          "imgMobile": "images/products/559cd62cf277472c94edd530b565d432-144x192.png",
+          "href": "/books/ سر-رسید-1405-خیلی-سبز-طرح-365-رنگ-گلبهی",
+          "inStock": true
+        },
+        {
+          "id": 1655,
+          "title": "سررسید 1405 خیلی سبز طرح 365 رنگ بنفش",
+          "price": 4500000,
+          "salePrice": 2250000,
+          "discountPresent": 50,
+          "imgDesktop": "images/products/01c5356fe3d04d9f8b9188351425dbd6-240x320.png",
+          "imgMobile": "images/products/01c5356fe3d04d9f8b9188351425dbd6-144x192.png",
+          "href": "/books/ سر-رسید-1405-خیلی سبز-طرح-365-رنگ-بنفش",
+          "inStock": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "تازه ها",
+      "products": [
+        {
+          "id": 3977,
+          "title": "تست تاریخ جامع جلد سوال و پاسخ",
+          "price": 15900000,
+          "salePrice": 15900000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/ba5517552a3640e9956798f8bb307621-240x320.png",
+          "imgMobile": "images/products/ba5517552a3640e9956798f8bb307621-144x192.png",
+          "href": "/books/تست-تاریخ-جامع-جلد-سوال-و-پاسخ",
+          "inStock": true
+        },
+        {
+          "id": 3889,
+          "title": "کتاب تست فلسفه و منطق جامع جلد سوال و پاسخ",
+          "price": 24500000,
+          "salePrice": 24500000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/201631f091484c66a9187cfa1234b41b-240x320.png",
+          "imgMobile": "images/products/201631f091484c66a9187cfa1234b41b-144x192.png",
+          "href": "/books/تست-فلسفه-و-منطق-جامع-جلد-سوال-و-پاسخ-3077603",
+          "inStock": true
+        },
+        {
+          "id": 3794,
+          "title": "کتاب تست جغرافیا جامع جلد سوال و پاسخ",
+          "price": 13100000,
+          "salePrice": 13100000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/6639c7f5dfe14118a8f8e879a7bcb4ce-240x320.png",
+          "imgMobile": "images/products/6639c7f5dfe14118a8f8e879a7bcb4ce-144x192.png",
+          "href": "/books/کتاب-تست-جغرافیا-جامع-جلد-سوال-و-پاسخ",
+          "inStock": true
+        },
+        {
+          "id": 3785,
+          "title": "کتاب تست روانشناسی جامع",
+          "price": 17900000,
+          "salePrice": 16110000,
+          "discountPresent": 10,
+          "imgDesktop": "images/products/c7edf0042d8b4c1f9f93215e9b8a10ec-240x320.png",
+          "imgMobile": "images/products/c7edf0042d8b4c1f9f93215e9b8a10ec-144x192.png",
+          "href": "/books/کتاب-تست-روانشناسی-جامع",
+          "inStock": true
+        },
+        {
+          "id": 3781,
+          "title": "کتاب تست اقتصاد جامع",
+          "price": 17900000,
+          "salePrice": 17900000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/d921a920c80c46f290bacda14f59e506-240x320.png",
+          "imgMobile": "images/products/d921a920c80c46f290bacda14f59e506-144x192.png",
+          "href": "/books/کتاب-تست-اقتصاد-جامع",
+          "inStock": true
+        },
+        {
+          "id": 3780,
+          "title": "کتاب تست جامعه شناسی جامع جلد سوال و پاسخ",
+          "price": 19900000,
+          "salePrice": 19900000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/23a9bc0ba4c04267b85cffc04f3f246d-240x320.png",
+          "imgMobile": "images/products/23a9bc0ba4c04267b85cffc04f3f246d-144x192.png",
+          "href": "/books/کتاب-تست-جامعه-شناسی-جامع-جلد-سوال-و-پاسخ",
+          "inStock": true
+        },
+        {
+          "id": 3770,
+          "title": "تست ریاضی و آمار جامع انسانی جلد سوال و پاسخ + ضمیمه",
+          "price": 15500000,
+          "salePrice": 15500000,
+          "discountPresent": 0,
+          "imgDesktop": "images/products/099bae055a7243c9942f09d7dcaee8e9-240x320.png",
+          "imgMobile": "images/products/099bae055a7243c9942f09d7dcaee8e9-144x192.png",
+          "href": "/books/تست-ریاضی-و-آمار-جامع-انسانی-جلد-سوال-و-پاسخ",
+          "inStock": true
+        }
+      ]
+    }
+  ],
+  "seriesChips": [
+    {
+      "label": "تست",
+      "href": "/books?k4=تست",
+      "image": "images/series/test.svg"
+    },
+    {
+      "label": "جمع بندی",
+      "href": "/books?k4=جمع-بندی",
+      "image": "images/series/jambandi.svg"
+    },
+    {
+      "label": "نردبام",
+      "href": "/books?k4=نردبام",
+      "image": "images/series/nardebam.svg"
+    },
+    {
+      "label": "موضوعی",
+      "href": "/books?k4=موضوعی",
+      "image": "images/series/mozooei.svg"
+    },
+    {
+      "label": "چندکنکور",
+      "href": "/books?k4=چند-کنکور",
+      "image": "images/series/chandkonkoor.svg"
+    },
+    {
+      "label": "فصل آزمون",
+      "href": "/books?k4=فصل-آزمون",
+      "image": "images/series/faslazmoon.svg"
+    },
+    {
+      "label": "جی‌بی",
+      "href": "/books?k4=جیبی",
+      "image": "images/series/gb.svg"
+    },
+    {
+      "label": "کتاب کار",
+      "href": "/books?k4=کتاب-کار",
+      "image": "images/series/ketab-kar.svg"
+    },
+    {
+      "label": "شب امتحان",
+      "href": "/books?k4=شب-امتحان",
+      "image": "images/series/shabe-emtehan.svg"
+    },
+    {
+      "label": "درک متن",
+      "href": "/books?k4=درک-متن",
+      "image": "images/series/darkematn.svg"
+    },
+    {
+      "label": "آموزش شگفت‌انگیز",
+      "href": "/books?k4=آموزش-شگفت-انگیز",
+      "image": "images/series/amoozeshe-shegeftangiz.svg"
+    },
+    {
+      "label": "تیزهوشان",
+      "href": "/books?k4=تیزهوشان",
+      "image": "images/series/tizhooshan.svg"
+    },
+    {
+      "label": "ماجراهای من و درسام",
+      "href": "/books?k4=ماجراهای-من-و-درسام",
+      "image": "images/series/majarahaye-manodarsam.svg"
+    },
+    {
+      "label": "آزمون تیزهوشان",
+      "href": "/books?k4=آزمون-تیزهوشان",
+      "image": "images/series/azmoone-tizhooshan.svg"
+    },
+    {
+      "label": "پیشتاز",
+      "href": "/books?k4=پیشتاز",
+      "image": "images/series/pishtaz.svg"
+    },
+    {
+      "label": "پیک هفتگی",
+      "href": "/books?k4=پیک-آدینه",
+      "image": "images/series/peyke-haftegi.svg"
+    },
+    {
+      "label": "تربچه",
+      "href": "/books?k4=تربچه",
+      "image": "images/series/torobche.svg"
+    },
+    {
+      "label": "خوش خطی",
+      "href": "/books?k4=خوش-خطی",
+      "image": "images/series/khoshkhati.svg"
+    },
+    {
+      "label": "مامان باباها",
+      "href": "/books?k4=مامان-باباها",
+      "image": "images/series/maman-babaha.svg"
+    },
+    {
+      "label": "گام به گام",
+      "href": "/books?k4=گام-به-گام",
+      "image": "images/series/gam-be-gam.svg"
+    },
+    {
+      "label": "بانک نهایی",
+      "href": "/books?k4=بانک-نهایی",
+      "image": "images/series/banke-nahaei.svg"
+    },
+    {
+      "label": "شبیه ساز",
+      "href": "/books?k4=شبیه-ساز",
+      "image": "images/series/shabihsaz.svg"
+    },
+    {
+      "label": "ماجرای بیست",
+      "href": "/books?k4=ماجرای-بیست",
+      "image": "images/series/20.svg"
+    },
+    {
+      "label": "BEAST-MODE-ON",
+      "href": "/books?k4=BEAST-MODE-ON",
+      "image": "images/series/beast-mode.svg"
+    }
+  ],
+  "gradeChips": [
+    {
+      "label": "کنکور",
+      "href": "/books?k5=جامع,پایه,دوازدهم&k4=تست,جمع-بندی,چند-کنکور,فصل-آزمون,موضوعی,نردبام,آموزش-شگفت-انگیز,جیبی"
+    },
+    {
+      "label": "جامع",
+      "href": "/books?k5=جامع"
+    },
+    {
+      "label": "دوازدهم",
+      "href": "/books?k5=دوازدهم"
+    },
+    {
+      "label": "پایه",
+      "href": "/books?k5=پایه"
+    },
+    {
+      "label": "یازدهم",
+      "href": "/books?k5=یازدهم"
+    },
+    {
+      "label": "دهم",
+      "href": "/books?k5=دهم"
+    },
+    {
+      "label": "نهم",
+      "href": "/books?k5=نهم"
+    },
+    {
+      "label": "هشتم",
+      "href": "/books?k5=هشتم"
+    },
+    {
+      "label": "هفتم",
+      "href": "/books?k5=هفتم"
+    },
+    {
+      "label": "ششم",
+      "href": "/books?k5=ششم"
+    },
+    {
+      "label": "پنجم",
+      "href": "/books?k5=پنجم"
+    },
+    {
+      "label": "چهارم",
+      "href": "/books?k5=چهارم"
+    },
+    {
+      "label": "سوم",
+      "href": "/books?k5=سوم"
+    },
+    {
+      "label": "دوم",
+      "href": "/books?k5=دوم"
+    },
+    {
+      "label": "اول",
+      "href": "/books?k5=اول"
+    },
+    {
+      "label": "پیش‌دبستانی",
+      "href": "/books?k5=پیش-دبستانی"
+    },
+    {
+      "label": "مهدکودک",
+      "href": "/books?k5=مهد-کودک"
+    }
+  ],
+  "banners": [
+    {
+      "image": "images/banner-1.jpg",
+      "href": "/books?k4=تربچه",
+      "alt": "تربچه"
+    },
+    {
+      "image": "images/banner-2.jpg",
+      "href": "/books?k4=کتاب-کار&k5=اول,هفتم,هشتم,نهم,دهم,یازدهم,دوازدهم",
+      "alt": "کتاب کار"
+    },
+    {
+      "image": "images/banner-3.jpg",
+      "href": "/books?k5=دوم,سوم,چهارم,پنجم,ششم,هفتم,هشتم,نهم&k4=تیزهوشان",
+      "alt": "تیزهوشان"
+    }
+  ],
+  "footer": {
+    "logo": "images/logo-footer.svg",
+    "aboutTitle": "درس خوندن با خیلی سبز فرق داره",
+    "about": "انجام کارها به شیوه‌ای معمولی، هیچ تحولی در هیچ کجای دنیا ایجاد نمی‌کند؛ برای همین به دانش‌آموزان می‌گوییم «متفاوت یاد بگیر» و به خودمان می‌گوییم «ناشری کاملاً متفاوت»!<br>ما همیشه دوست داریم به هر محصول، خدمت یا روشی از نو نگاه کنیم و آن را متفاوت‌تر از آنچه هست بسازیم یا ارائه دهیم. دوست داریم با کارهایمان مخاطبان را تحت تأثیر قرار دهیم، بخندانیم، خوشحال کنیم و غافلگیرشان کنیم. همیشه می‌کوشیم بهترین باشیم؛ حتی اگر الان نیستیم، آن‌قدر تلاش می‌کنیم تا به آن نقطه برسیم.",
+    "cols": [
+      {
+        "title": "خیلی سبز",
+        "items": [
+          {
+            "txt": "درباره ما",
+            "href": "/page/about-us"
+          },
+          {
+            "txt": "تماس با ما",
+            "href": "/page/contact-us"
+          },
+          {
+            "txt": "فرصت‌های شغلی",
+            "href": "https://jobs.kheilisabz.com"
+          },
+          {
+            "txt": "سوالات متداول",
+            "href": "/faq"
+          }
+        ]
+      },
+      {
+        "title": "خدمات مشتریان",
+        "items": [
+          {
+            "txt": "نحوه خرید",
+            "href": "/page/نحوه-خرید"
+          },
+          {
+            "txt": "قوانین و مقررات",
+            "href": "/page/قوانین-و-مقررات"
+          },
+          {
+            "txt": "نمایندگان فروش",
+            "href": "/page/agency"
+          },
+          {
+            "txt": "طرح حکمت (باقرالعلوم)",
+            "href": "https://fanavaran.tbao.ir/Company?company=112"
+          }
+        ]
+      }
+    ],
+    "socials": [
+      {
+        "href": "https://t.me/kheilisabzgeneral",
+        "image": "images/social/telegram.svg",
+        "alt": "تلگرام خیلی سبز"
+      },
+      {
+        "href": "https://www.youtube.com/@kheilisabz_official",
+        "image": "images/social/youtube.svg",
+        "alt": "یوتوب خیلی سبز"
+      },
+      {
+        "href": "https://www.instagram.com/kheilisabz",
+        "image": "images/social/instagram.svg",
+        "alt": "اینستاگرام خیلی سبز"
+      },
+      {
+        "href": "https://www.aparat.com/kheilisabz",
+        "image": "images/social/aparat.svg",
+        "alt": "آپارات خیلی سبز"
+      },
+      {
+        "href": "https://eitaa.com/kheilisabzpublication",
+        "image": "images/social/eitaa.svg",
+        "alt": "ایتا خیلی سبز"
+      },
+      {
+        "href": "https://rubika.ir/kheilisabzpublication",
+        "image": "images/social/rubika.svg",
+        "alt": "روبیکا خیلی سبز"
+      },
+      {
+        "href": "https://ble.ir/kheilisabzpublication",
+        "image": "images/social/bale.svg",
+        "alt": "بله خیلی سبز"
+      }
+    ],
+    "trust": [
+      {
+        "image": "images/trust-badge.png",
+        "href": "https://logo.samandehi.ir/Verify.aspx?id=318137&p=xlaorfthmcsirfthxlaojyoe",
+        "alt": "ساماندهی"
+      }
+    ],
+    "copyright": "تمامی حقوق این وب‌سایت متعلق به انتشارات خیلی سبز است و هرگونه استفاده از مطالب آن بدون ذکر منبع پیگرد قانونی دارد."
+  },
+  "users": []
+}

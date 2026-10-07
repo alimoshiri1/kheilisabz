@@ -1,0 +1,7 @@
+<svg id="icon.user" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="fi-rr-user" transform="translate(1 1)">
+    <path id="Path_15978" data-name="Path 15978" d="M11,10A5,5,0,1,0,6,5a5,5,0,0,0,5,5Zm0-8.333A3.333,3.333,0,1,1,7.667,5,3.333,3.333,0,0,1,11,1.667Z" transform="translate(0 1)" fill="#2d2d2d"/>
+    <path id="Path_15979" data-name="Path 15979" d="M11,14a8.009,8.009,0,0,0-8,8,.889.889,0,1,0,1.778,0,6.222,6.222,0,0,1,12.444,0A.889.889,0,0,0,19,22,8.009,8.009,0,0,0,11,14Z" transform="translate(0 -2)" fill="#2d2d2d"/>
+  </g>
+  <rect id="Rectangle_40" data-name="Rectangle 40" width="24" height="24" fill="none"/>
+</svg>
