@@ -1,5 +1,25 @@
 (function () {
   var API = window.CONFIG.API;
+  var STATIC = window.CONFIG.STATIC;
+  function getLocalUsers() {
+    try {
+      return JSON.parse(localStorage.getItem("users") || "[]");
+    } catch (e) {
+      return [];
+    }
+  }
+  function saveLocalUser(phone, name) {
+    var users = getLocalUsers();
+    var found = null;
+    for (var i = 0; i < users.length; i++) {
+      if (users[i].phone === phone) found = users[i];
+    }
+    if (found) found.name = name;
+    else users.push({ phone: phone, name: name });
+    try {
+      localStorage.setItem("users", JSON.stringify(users));
+    } catch (e) {}
+  }
   var DEMO_CODE = "1234";
   var DEMO_CODE_FA = "۱۲۳۴";
   var step = 1;
@@ -159,21 +179,38 @@
         return;
       }
       spin(getCodeBtn, true);
+      function gotList(list) {
+        spin(getCodeBtn, false);
+        isNew = !list.length;
+        userId = isNew ? null : list[0].id;
+        oldName = isNew ? "" : list[0].name || "";
+        renderStep2();
+      }
+      if (STATIC) {
+        gotList(
+          getLocalUsers().filter(function (u) {
+            return u.phone === phone;
+          })
+        );
+        return;
+      }
       fetch(API + "/users?phone=" + encodeURIComponent(phone))
         .then(function (r) {
           if (!r.ok) throw new Error("bad status");
           return r.json();
         })
-        .then(function (list) {
-          spin(getCodeBtn, false);
-          isNew = !list.length;
-          userId = isNew ? null : list[0].id;
-          oldName = isNew ? "" : list[0].name || "";
-          renderStep2();
-        })
+        .then(gotList)
         .catch(function () {
           spin(getCodeBtn, false);
-          showErr("ارتباط با سرور برقرار نشد؛ json-server را روی پورت ۳۰۰۰ اجرا کنید.");
+          try {
+            gotList(
+              getLocalUsers().filter(function (u) {
+                return u.phone === phone;
+              })
+            );
+          } catch (e) {
+            showErr("ارتباط با سرور برقرار نشد؛ json-server را روی پورت ۳۰۰۰ اجرا کنید.");
+          }
         });
       return;
     }
@@ -195,6 +232,11 @@
 
     var btn = $("#login");
     spin(btn, true);
+    if (STATIC) {
+      saveLocalUser(phone, name);
+      done(name);
+      return;
+    }
     var save;
     if (isNew) {
       save = fetch(API + "/users", {

@@ -19,7 +19,7 @@ if not exist "node_modules\json-server" (
     call npm install --no-fund --no-audit
 )
 
-powershell -NoProfile -ExecutionPolicy Bypass -Command "try { Invoke-WebRequest 'http://localhost:8080' -UseBasicParsing -TimeoutSec 1 | Out-Null; exit 0 } catch { exit 1 }" >nul 2>nul
+powershell -NoProfile -ExecutionPolicy Bypass -Command "try { Invoke-WebRequest 'http://localhost:8080' -UseBasicParsing -TimeoutSec 1 | Out-Null; Invoke-WebRequest 'http://127.0.0.1:3000/settings' -UseBasicParsing -TimeoutSec 1 | Out-Null; exit 0 } catch { exit 1 }" >nul 2>nul
 if not errorlevel 1 (
     echo [OK] Server ghablan dar hal kar ast.
     start "" "http://localhost:8080"
@@ -34,7 +34,7 @@ set /a tries=0
 :wait
 ping -n 2 127.0.0.1 >nul
 set /a tries+=1
-powershell -NoProfile -ExecutionPolicy Bypass -Command "try { Invoke-WebRequest 'http://localhost:8080' -UseBasicParsing -TimeoutSec 1 | Out-Null; exit 0 } catch { exit 1 }" >nul 2>nul
+powershell -NoProfile -ExecutionPolicy Bypass -Command "try { Invoke-WebRequest 'http://localhost:8080' -UseBasicParsing -TimeoutSec 1 | Out-Null; Invoke-WebRequest 'http://127.0.0.1:3000/settings' -UseBasicParsing -TimeoutSec 1 | Out-Null; exit 0 } catch { exit 1 }" >nul 2>nul
 if not errorlevel 1 goto ready
 if %tries% geq 30 goto failed
 goto wait

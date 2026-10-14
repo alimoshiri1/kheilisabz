@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>یافت نشد | خیلی سبز</title>
+<script>
+// GitHub Pages fallback: /books/..., /cart, /search, /blog -> real site
+// (mirrors server.js 302 redirect to kheilisabz.com)
+(function () {
+  var SITE = "https://kheilisabz.com";
+  var p = location.pathname;
+  // strip repo base (/kheilisabz) if present
+  var repoBase = "/kheilisabz";
+  var path = p.indexOf(repoBase) === 0 ? p.slice(repoBase.length) || "/" : p;
+  if (path === "/" || path === "/index.html") {
+    location.replace("index.html");
+    return;
+  }
+  // product / shop pages live on the real site
+  location.replace(SITE + path + location.search + location.hash);
+})();
+</script>
+</head>
+<body>
+<p style="text-align:center;font-family:sans-serif">در حال انتقال...</p>
+</body>
+</html>

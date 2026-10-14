@@ -23,6 +23,12 @@
   function isExternal(href) {
     return /^(https?:)?\/\//.test(href || "");
   }
+  function escHref(h) {
+    try {
+      if (typeof resolveHref === "function") h = resolveHref(h);
+    } catch (e) {}
+    return esc(h);
+  }
 
   /* header blur overlay (mega / dropdown) */
   var headerBlur = { mega: false, drop: false };
@@ -50,13 +56,47 @@
     check();
   }
 
+  var STATIC = window.CONFIG.STATIC;
+  var STATIC_DB = window.CONFIG.STATIC_DB || "db.json";
+  var SITE = window.CONFIG.SITE || "https://kheilisabz.com";
+
+  /* On GitHub Pages /books/... has no local file -> send to real site,
+     like server.js does locally (302 to kheilisabz.com). */
+  function resolveHref(href) {
+    if (!href) return href;
+    if (!STATIC) return href;
+    if (/^(https?:)?\/\//.test(href) || href.charAt(0) === "#" || href.indexOf("javascript:") === 0) return href;
+    if (href.charAt(0) === "/" && href !== "/" && href !== "/cart" && href !== "/login") {
+      return SITE + href;
+    }
+    return href;
+  }
+
   var paths = ["settings", "nav", "menu", "sliders", "sections", "seriesChips", "gradeChips", "banners", "footer", "users"];
-  function loadDb() {
+  /* fetch with retry: API (json-server) starts slower than web server,
+     so first page open used to fail and leave a blank page until manual refresh */
+  function fetchJson(url, maxTries, delayMs) {
+    maxTries = maxTries || 30;
+    delayMs = delayMs || 500;
+    function attempt(n) {
+      return fetch(url).then(function (r) {
+        if (!r.ok) throw new Error("HTTP " + r.status + " for " + url);
+        return r.json();
+      }).catch(function (err) {
+        if (n >= maxTries) throw err;
+        return new Promise(function (res) {
+          setTimeout(res, delayMs);
+        }).then(function () {
+          return attempt(n + 1);
+        });
+      });
+    }
+    return attempt(1);
+  }
+  function loadDbFromApi() {
     return Promise.all(
       paths.map(function (p) {
-        return fetch(API + "/" + p).then(function (r) {
-          return r.json();
-        });
+        return fetchJson(API + "/" + p);
       })
     ).then(function (res) {
       var db = {};
@@ -64,6 +104,20 @@
         db[p] = res[i];
       });
       return db;
+    });
+  }
+  /* Static mode (GitHub Pages): single db.json, no json-server */
+  function loadDbStatic() {
+    return fetch(STATIC_DB).then(function (r) {
+      if (!r.ok) throw new Error("db.json HTTP " + r.status);
+      return r.json();
+    });
+  }
+  function loadDb() {
+    if (STATIC) return loadDbStatic();
+    /* locally: try API a few times, then fallback to db.json so file:// preview also works */
+    return loadDbFromApi().catch(function () {
+      return loadDbStatic();
     });
   }
 
@@ -589,28 +643,81 @@
     if (input && s.placeholder) input.setAttribute("placeholder", s.placeholder);
   }
 
+  /* Static hosting (GitHub Pages): rewrite absolute links once + intercept future ones */
+  function applyStaticLinkFix(scope) {
+    if (!STATIC) return;
+    try {
+      (scope || document).querySelectorAll('a[href^="/"]').forEach(function (a) {
+        var h = a.getAttribute("href");
+        var fixed = resolveHref(h);
+        if (fixed === "/") fixed = "index.html";
+        else if (fixed === "/cart") fixed = SITE + "/cart";
+        a.setAttribute("href", fixed);
+        if (/^https?:\/\//.test(fixed)) {
+          a.setAttribute("target", "_blank");
+          a.setAttribute("rel", "noopener");
+        }
+      });
+    } catch (e) {}
+  }
+  if (STATIC) {
+    document.addEventListener(
+      "click",
+      function (e) {
+        var a = e.target && e.target.closest ? e.target.closest('a[href^="/"]') : null;
+        if (!a) return;
+        var h = a.getAttribute("href") || "";
+        if (/^(https?:)?\/\//.test(h)) return; /* already fixed */
+        e.preventDefault();
+        if (h === "/" || h === "") location.href = "index.html";
+        else if (h === "/cart") window.open(SITE + "/cart", "_blank");
+        else window.open(SITE + h, "_blank");
+      },
+      true
+    );
+  }
+
   /* ---------------- init ---------------- */
   initHeaderScroll();
-  loadDb()
-    .then(function (db) {
-      renderNav(db);
-      renderMega(db);
-      renderHero(db);
-      renderSections(db);
-      renderTiles(db);
-      chipSwiper("series-chips-swiper", db.seriesChips);
-      chipSwiper("grade-chips-swiper", db.gradeChips);
-      renderBanners(db);
-      renderFooter(db);
-      renderBottomNav(db);
-      renderDrawer(db);
-      renderPopup(db);
-      updateLogin(db);
-      bindLoginPopup();
-      initBooksSwipers();
-      window.__pageReady = true;
-    })
-    .catch(function (err) {
-      console.error("load failed", err);
-    });
+  function boot() {
+    loadDb()
+      .then(function (db) {
+        renderNav(db);
+        renderMega(db);
+        renderHero(db);
+        renderSections(db);
+        renderTiles(db);
+        chipSwiper("series-chips-swiper", db.seriesChips);
+        chipSwiper("grade-chips-swiper", db.gradeChips);
+        renderBanners(db);
+        renderFooter(db);
+        renderBottomNav(db);
+        renderDrawer(db);
+        renderPopup(db);
+        updateLogin(db);
+        bindLoginPopup();
+        initBooksSwipers();
+        applyStaticLinkFix(document);
+        /* drawer content is created later on burger click */
+        document.addEventListener("click", function (e) {
+          if (e.target && e.target.closest && e.target.closest("#burger")) {
+            setTimeout(function () {
+              applyStaticLinkFix(document.getElementById("drawer-root"));
+            }, 0);
+          }
+        });
+        window.__pageReady = true;
+      })
+      .catch(function (err) {
+        console.error("load failed, retrying in 1s...", err);
+        /* In static mode db.json missing = fatal, don't loop forever */
+        if (STATIC) {
+          console.error("static load failed, check db.json path");
+          return;
+        }
+        /* never leave a blank page: keep retrying until API is up */
+        setTimeout(boot, 1000);
+      });
+  }
+  boot();
 })();

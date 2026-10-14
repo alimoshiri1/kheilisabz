@@ -1,5 +1,25 @@
 (function () {
   var API = window.CONFIG.API;
+  var STATIC = window.CONFIG.STATIC;
+  function getLocalUsers() {
+    try {
+      return JSON.parse(localStorage.getItem("users") || "[]");
+    } catch (e) {
+      return [];
+    }
+  }
+  function saveLocalUser(phone, name) {
+    var users = getLocalUsers();
+    var found = null;
+    for (var i = 0; i < users.length; i++) {
+      if (users[i].phone === phone) found = users[i];
+    }
+    if (found) found.name = name;
+    else users.push({ phone: phone, name: name });
+    try {
+      localStorage.setItem("users", JSON.stringify(users));
+    } catch (e) {}
+  }
   var DEMO_CODE = "1234";
   var DEMO_CODE_FA = "۱۲۳۴";
   var step = 1;
@@ -51,27 +71,43 @@
       }
       var btn = $("#login-submit");
       btn.disabled = true;
+      function enterStep2(list) {
+        btn.disabled = false;
+        isNew = !list.length;
+        userId = isNew ? null : list[0].id;
+        oldName = isNew ? "" : list[0].name || "";
+        if (oldName) $("#name-input").value = oldName;
+        step = 2;
+        $("#code-block").classList.remove("hidden");
+        btn.textContent = "ورود";
+        $("#login-hint").textContent =
+          "کد تایید نمایشی: " + DEMO_CODE_FA + " (نسخه آزمایشی — پیامک واقعی ارسال نمی‌شود)";
+        codeInput.focus();
+      }
+      if (STATIC) {
+        var local = getLocalUsers().filter(function (u) {
+          return u.phone === phone;
+        });
+        enterStep2(local);
+        return;
+      }
       fetch(API + "/users?phone=" + encodeURIComponent(phone))
         .then(function (r) {
           if (!r.ok) throw new Error("bad status");
           return r.json();
         })
-        .then(function (list) {
-          btn.disabled = false;
-          isNew = !list.length;
-          userId = isNew ? null : list[0].id;
-          oldName = isNew ? "" : list[0].name || "";
-          if (oldName) $("#name-input").value = oldName;
-          step = 2;
-          $("#code-block").classList.remove("hidden");
-          btn.textContent = "ورود";
-          $("#login-hint").textContent =
-            "کد تایید نمایشی: " + DEMO_CODE_FA + " (نسخه آزمایشی — پیامک واقعی ارسال نمی‌شود)";
-          codeInput.focus();
-        })
+        .then(enterStep2)
         .catch(function () {
-          btn.disabled = false;
-          showErr("ارتباط با سرور برقرار نشد؛ json-server را روی پورت ۳۰۰۰ اجرا کنید.");
+          /* fallback to local so Pages demo still works */
+          try {
+            var fb = getLocalUsers().filter(function (u) {
+              return u.phone === phone;
+            });
+            enterStep2(fb);
+          } catch (e) {
+            btn.disabled = false;
+            showErr("ارتباط با سرور برقرار نشد؛ json-server را روی پورت ۳۰۰۰ اجرا کنید.");
+          }
         });
       return;
     }
@@ -87,6 +123,12 @@
 
     var btn2 = $("#login-submit");
     btn2.disabled = true;
+    if (STATIC) {
+      saveLocalUser(phone, name);
+      localStorage.setItem("user", JSON.stringify({ name: name, phone: phone }));
+      location.href = "index.html";
+      return;
+    }
     var save;
     if (isNew) {
       save = fetch(API + "/users", {
