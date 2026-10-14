@@ -1,0 +1,268 @@
+/*#region fonts */
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/Vazir.eot");
+    src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"), url("../fonts/Vazir.woff2") format("woff2"), url("../fonts/Vazir.woff") format("woff"), url("../fonts/Vazir.ttf") format("truetype");
+    font-display: swap;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/Vazir-Bold.eot");
+    src: url("../fonts/Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Vazir-Bold.woff2") format("woff2"), url("../fonts/Vazir-Bold.woff") format("woff"), url("../fonts/Vazir-Bold.ttf") format("truetype");
+    font-display: swap;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/Vazir-Light.eot");
+    src: url("../fonts/Vazir-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Vazir-Light.woff2") format("woff2"), url("../fonts/Vazir-Light.woff") format("woff"), url("../fonts/Vazir-Light.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/Vazir-Medium.eot");
+    src: url("../fonts/Vazir-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Vazir-Medium.woff2") format("woff2"), url("../fonts/Vazir-Medium.woff") format("woff"), url("../fonts/Vazir-Medium.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/Vazir-Thin.eot");
+    src: url("../fonts/Vazir-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Vazir-Thin.woff2") format("woff2"), url("../fonts/Vazir-Thin.woff") format("woff"), url("../fonts/Vazir-Thin.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Vazir;
+    src: url("../fonts/Vazir-Black.eot");
+    src: url("../fonts/Vazir-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Vazir-Black.woff2") format("woff2"), url("../fonts/Vazir-Black.woff") format("woff"), url("../fonts/Vazir-Black.ttf") format("truetype");
+    font-display: swap;
+    font-weight: 900;
+}
+
+* {
+    box-sizing: border-box !important;
+    font-family: "Vazir", tahoma !important;
+}
+
+
+/*#endregion */
+
+body{
+    text-align:right;
+    direction:rtl;
+    margin-top:unset;
+}
+
+a {
+    cursor:pointer;
+    color: #2196f3;
+}
+
+    a:hover {
+        color: #337ab7;
+        text-decoration: none
+    }
+
+    a:focus{
+        text-decoration:none
+    }
+
+:focus {
+    outline: none;
+}
+
+.relative{
+    position:relative
+}
+
+.m-auto{
+    margin:auto;
+}
+
+.mb-5{
+    margin-bottom:5rem
+}
+
+.mb-2{
+    margin-bottom:2rem;
+}
+
+.mb-0{
+    margin-bottom:0
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-4 {
+    margin-top: 4rem
+}
+
+.mt-3{
+    margin-top:3rem;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-70 {
+    width:70%;
+}
+
+
+.header-login {
+    margin: 1rem 0 4rem 0;
+}
+
+.page-header {
+    margin: 0 !important;
+  }
+
+.change-number {
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.effect-2 {
+    border: 0;
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+    .effect-2 ~ .focus-border {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        right: 50%;
+        width: 0;
+        height: 2px;
+        margin: 0 auto;
+        background-color: #3399ff;
+        transition: 0.4s;
+    }
+
+    .effect-2:focus ~ .focus-border {
+        width: 100%;
+        transition: 0.4s;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+.timer {
+    display: flex;
+    direction: ltr;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.timer span{
+    margin-right: 0.5rem
+}
+
+.jst-hours {
+    display:none;
+}
+
+.jst-clearDiv {
+    clear: both;
+}
+
+.timeout {
+    color: red;
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(1.0,0,0,1.0);
+    -webkit-animation-duration: 1s;
+}
+
+.btn-custom {
+    color:#fff;
+    border-radius: 8px;
+    transition:all 0.2s ease-in;
+    background-color: #2196f3;
+}
+
+    .btn-custom:hover {
+        color: #fff;
+    }
+
+.alert-danger {
+    padding:10px;
+    display: flex;
+    color: #ec2027;
+    margin-bottom: 0;
+    align-items: flex-end;
+    border-color: #ec2027;
+    background-color: #ffe5e6;
+}
+
+    .alert-danger span {
+        margin-left: 0.5rem;
+    }
+
+.alert-danger ul{
+    margin-bottom:0;
+    padding:0;
+    list-style:none;
+}
+
+
+.tab-switching {
+    color: #cccccc;
+    margin-bottom:3rem;
+    padding-bottom: 0.75rem;
+    border-bottom: solid 1px #cccccc;
+}
+
+    .tab-switching a {
+        color: #cccccc;
+    }
+
+    .tab-switching.active {
+        border-width:2px;
+        border-color: #883df2;
+    }
+
+    .tab-switching.active a {
+        color: #883df2;
+        font-weight:bold;
+    }
+
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+    @-webkit-keyframes blinker {
+        from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.0;
+    }
+}
+
+.otp-login {
+    text-align: center;
+    font-size: 1.2rem;
+}

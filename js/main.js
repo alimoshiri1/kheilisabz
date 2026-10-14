@@ -479,6 +479,59 @@
     });
   }
 
+  /* ---------------- login popup ---------------- */
+  function currentUser() {
+    try {
+      return JSON.parse(localStorage.getItem("user") || "null");
+    } catch (e) {
+      return null;
+    }
+  }
+  function openLoginPopup() {
+    var w = window.open(
+      "login-popup.html",
+      "_blank",
+      "location=no,toolbar=no,width=500,height=500,left=100,top=100;"
+    );
+    if (w && w.focus) w.focus();
+    return false;
+  }
+  function bindLoginPopup() {
+    var btn = $(".login-button");
+    if (btn) {
+      if (!currentUser()) btn.setAttribute("href", "login-popup.html");
+      btn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (currentUser()) return;
+        openLoginPopup();
+      });
+    }
+    var navBtn = $('#bottom-nav a[href="login-popup.html"]');
+    if (navBtn) {
+      navBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        if (currentUser()) return;
+        openLoginPopup();
+      });
+    }
+  }
+  function syncLoginLabel() {
+    var lbl = $("#login-label");
+    if (!lbl) return;
+    var link = lbl.closest("a");
+    var u = currentUser();
+    if (u && u.name) {
+      lbl.textContent = u.name;
+      if (link) link.setAttribute("href", "javascript:void(0)");
+    } else {
+      lbl.textContent = "ورود یا ثبت‌نام";
+      if (link) link.setAttribute("href", "login-popup.html");
+    }
+  }
+  window.addEventListener("storage", function (e) {
+    if (!e.key || e.key === "user") syncLoginLabel();
+  });
+
   /* ---------------- bottom nav & drawer ---------------- */
   function renderBottomNav() {
     if (!$("#bottom-nav")) return;
@@ -487,7 +540,7 @@
       { href: "/search", icon: "images/icon-search-nav.svg" },
       { href: "/blog", icon: "images/icon-blog.svg" },
       { href: "/cart", icon: "images/icon-cart.svg" },
-      { href: "/login.html", icon: "images/icon-user.svg" },
+      { href: "login-popup.html", icon: "images/icon-user.svg" },
     ];
     $("#bottom-nav").innerHTML = items
       .map(function (i) {
@@ -530,16 +583,7 @@
 
   /* ---------------- header extras ---------------- */
   function updateLogin(db) {
-    try {
-      var u = JSON.parse(localStorage.getItem("user") || "null");
-      if (u && u.name) {
-        var lbl = $("#login-label");
-        if (lbl) {
-          lbl.textContent = u.name;
-          lbl.closest("a").setAttribute("href", "javascript:void(0)");
-        }
-      }
-    } catch (e) {}
+    syncLoginLabel();
     var s = db.settings;
     var input = $("#search-input");
     if (input && s.placeholder) input.setAttribute("placeholder", s.placeholder);
@@ -562,6 +606,7 @@
       renderDrawer(db);
       renderPopup(db);
       updateLogin(db);
+      bindLoginPopup();
       initBooksSwipers();
       window.__pageReady = true;
     })

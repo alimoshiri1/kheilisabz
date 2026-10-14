@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kheilisabz Login</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/auth-bootstrap.css" />
+    <link rel="stylesheet" href="css/auth-site.css" />
+    <link rel="stylesheet" href="css/auth-custom.css" />
+</head>
+<body>
+    <div class="container body-content">
+        <div class="login-page">
+
+    <div class="row">
+
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="page-header text-right mb-0">
+                    <h5> <img src="images/login-logo.svg" width="30" /> ورود به سایت</h5>
+                </div>
+
+                <div class="">
+                    <div class="panel-body">
+
+                        <form id="login-form" novalidate>
+                            <input type="hidden" id="ReturnUrl" name="ReturnUrl" value="/connect/authorize/callback?client_id=" />
+                            <input type="hidden" id="Uri" name="Uri" value="https://kheilisabz.com/" />
+
+                            <fieldset class="text-center">
+
+                                <div class="header-login">
+                                    <div class="mb-2"><img src="images/login-logo.svg" width="55" /></div>
+
+                                    <label for="PhoneNumber" id="login-label">ورود</label>
+
+                                    <p id="login-sub">برای سایت <a href="index.html">kheilisabz.com</a></p>
+                                </div>
+                                <div id="mobile_wrapper">
+                                    <div class="form-group w-70 m-auto relative">
+                                        <p class="mb-5">شماره موبایل خود را وارد کنید.</p>
+                                        <input type="text" class="effect-2" placeholder="۰۹۱۲۳۴۵۶۷۸۹" min="0" autocomplete="off" autofocus id="PhoneNumber" name="PhoneNumber" value="" inputmode="numeric">
+                                        <span class="focus-border"></span>
+                                    </div>
+
+                                    <div class="alert-danger hidden" id="login-error" role="alert">
+                                        <span>&#9888;</span><span id="login-error-text"></span>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-custom mt-3" id="getCode" disabled="disabled" name="button" value="login_request">دریافت کد اعتبارسنجی</button>
+
+                                </div>
+
+
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</div>
+
+
+    </div>
+
+    <script src="js/config.js"></script>
+    <script src="js/auth-popup.js"></script>
+
+</body>
+</html>
